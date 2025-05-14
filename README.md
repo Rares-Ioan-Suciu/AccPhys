@@ -10,6 +10,9 @@ AccPhys provides a focused learning environment tailored to students preparing f
 
 ## 🔹 Features
 
+### [Demo](https://youtube.com/shorts/5j3RSEz3QlU?feature=share)
+https://youtube.com/shorts/5j3RSEz3QlU?feature=share
+
 ### 📚 Theory
 Access essential physics formulas and laws at a glance. From the expression of velocity to Newton's Laws of Motion, the Theory section offers concise explanations to guide you through the fundamentals of mechanics.
 
