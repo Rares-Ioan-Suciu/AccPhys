@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/question_menu_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainMenuFragments.QuestionMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/text_quiz_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AccPhysics Quiz"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <ImageView
+                android:id="@+id/icon_question"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_quiz"
+                android:layout_marginBottom="24dp"
+                android:scaleType="fitCenter" />
+
+            <Button
+                android:id="@+id/button_race"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Race Against the Clock" />
+
+            <Button
+                android:id="@+id/button_strikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Three Strikes" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

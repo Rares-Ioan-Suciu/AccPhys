@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main horizontal layout -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <com.example.accphys.Simulations.SimplePlaneSimulation.SimplePlanePanel
+            android:id="@+id/controlPanel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.example.accphys.Simulations.SimplePlaneSimulation.SimplePlaneView
+            android:id="@+id/simpleView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <!-- Stop icon floating at the top center -->
+    <ImageView
+        android:id="@+id/stopIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_stop"
+        android:contentDescription="Stop Icon" />
+    <ImageView
+        android:id="@+id/forceDirectionIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_force"
+        android:contentDescription="Force Direction Icon" />
+
+    <ImageView
+        android:id="@+id/forceDirectionLeftIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_arrow2"
+        android:contentDescription="Force Direction Icon" />
+</FrameLayout>

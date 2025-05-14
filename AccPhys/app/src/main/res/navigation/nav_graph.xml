@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.accphys.MainMenuFragments.WelcomeFragment"
+        android:label="Acc"
+        tools:layout="@layout/fragment_welcome">
+
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.accphys.MainMenuFragments.QuestionMenu"
+        android:label="Questions"
+        tools:layout="@layout/fragment_question_menu"/>
+
+    <fragment
+        android:id="@+id/theoryFragment"
+        android:name="com.example.accphys.MainMenuFragments.TheoryMenu"
+        android:label="Theory"
+        tools:layout="@layout/fragment_theory_menu"/>
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.accphys.MainMenuFragments.HelpMenu"
+        android:label="Help"
+        tools:layout="@layout/fragment_help_menu"/>
+
+    <fragment
+        android:id="@+id/simulatorFragment"
+        android:name="com.example.accphys.MainMenuFragments.SimulatorMenu"
+        android:label="Simulator"
+        tools:layout="@layout/fragment_simulator_menu"/>
+</navigation>
